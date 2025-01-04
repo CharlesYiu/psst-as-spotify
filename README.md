@@ -1,3 +1,16 @@
+# Psst as Spotify
+## Changes
+* Renamed `psst.desktop`'s `name` to Spotify
+* Changed title bar to say Spotify instead of Psst
+* Use Spotify logos instead
+## Install on RPM Supported Distros
+I added configuration for generating RPM packages
+```shell
+cargo build --release
+cargo install cargo-generate-rpm
+cargo generate-rpm -p psst-gui
+```
+Find the RPM package at `./target/generate-rpm/`
 # Psst
 
 A fast Spotify client with a native GUI written in Rust, without Electron.
